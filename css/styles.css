@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #2E2F42;
+    --secondary-text-color: #434455;
+    --primary-accent-color: #4D5AE5;
+    --secondary-accent-color: #404bbf;
+    --primary-white-color: #FFFFFF;
+    --secondary-white-color: #F4F4FD;
+    --logo-color: #4D5AE5;
+}
+
+body {
+background-color: #FFFFFF;
+color: #434455;
+font-family: 'Roboto', sans-serif; 
+outline: 2px solid tomato;
+}
+
+/* --------------HEADER-------------- */
+
+.header-logo {
+font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+}
+
+.link {
+text-decoration: none;
+}
+
+.header-logo-item {
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+img {
+    display: block;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-link {
+    display: block;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;   
+        letter-spacing: 0.02em; 
+        color: var(--primary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+color: var(--secondary-accent-color);
+}
+
+.address-list {
+    display: flex;
+}
+
+.address-link {
+    display: block;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--secondary-accent-color);
+}
+
+/** -------------------------MAIN-PAGE------------------------- */
+/* --------------HERO-------------- */
+
+.hero {
+    background-color: var(--primary-text-color);
+}
+
+.hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em; 
+        color: var(--primary-white-color);
+}
+
+.hero-btn {
+    font-family: inherit;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.04em;
+        color: var(--primary-white-color);
+        background-color: var(--primary-accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--primary-white-color);
+    background-color: var(--secondary-accent-color);
+}
+
+/* --------------ABOUT-------------- */
+
+.about-item-title {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+
+.about-item-text {
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+}
+
+/* --------------FUNCTIONS-------------- */
+
+.functions-title {
+    font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--primary-text-color);
+}
+
+
+/* --------------TEAM-------------- */
+
+.team-title {
+    font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--primary-text-color);
+}
+
+.team-img-name {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+
+.team-img-text {
+    font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+}
+
+/** -------------------------PORTFOLIO------------------------- */
+/* --------------PRODUCTS-------------- */
+
+.filters-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-accent-color);
+    cursor: pointer;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+    background-color: var(--secondary-accent-color);
+    color: var(--primary-white-color);
+}
+
+.products-item-title {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--primary-text-color);
+}
+
+.products-item-text {
+    font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-text-color);
+}
+
+/* --------------FOOTER-------------- */
+
+.footer {
+    background-color: var(--primary-text-color);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--logo-color);
+}
+
+.footer-logo-item {
+    color: var(--secondary-white-color);
+}
+
+.footer-text {
+font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-white-color);
+}
