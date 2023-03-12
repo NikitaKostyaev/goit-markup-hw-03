@@ -1,7 +1,3 @@
-html {
-    box-sizing: border-box;
-}
-
 :root {
     --primary-text-color: #2E2F42;
     --secondary-text-color: #434455;
@@ -15,30 +11,11 @@ html {
 body {
 background-color: #FFFFFF;
 color: #434455;
-font-family: 'Roboto', sans-serif; 
-outline: 2px solid tomato;
-}
-
-/* --------------HEADER-------------- */
-
-.header-logo {
-font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--logo-color);
+font-family: 'Roboto', sans-serif;
 }
 
 .link {
-text-decoration: none;
-}
-
-.header-logo-item {
-    color: var(--primary-text-color);
+    text-decoration: none;
 }
 
 .list {
@@ -47,13 +24,24 @@ text-decoration: none;
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
 }
 
 ul {
     padding-left: 0;
     margin: 0;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 address {
@@ -64,13 +52,41 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: block;
+}
+
 .container {
-    margin: 0 auto;
+    width: 1128px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
     outline: 2px solid red;
 }
 
-img {
-    display: block;
+/* .main-nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+} */
+
+/* --------------HEADER-------------- */
+
+.header-logo {
+    display: flex;
+font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--logo-color);
+}
+
+.header-logo-item {
+    color: var(--primary-text-color);
 }
 
 .header-list {
@@ -91,9 +107,9 @@ img {
 color: var(--secondary-accent-color);
 }
 
-.address-list {
+/* .address-list {
     display: flex;
-}
+} */
 
 .address-link {
     display: block;
@@ -113,9 +129,14 @@ color: var(--secondary-accent-color);
 
 .hero {
     background-color: var(--primary-text-color);
+    padding-top: 188px;
+    padding-bottom: 292px;
 }
 
 .hero-title {
+    max-width: 496px;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 56px;
         line-height: 1.07;
         text-align: center;
@@ -124,11 +145,18 @@ color: var(--secondary-accent-color);
 }
 
 .hero-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    padding: 16px 32px;
+    border: 1.6px solid var(--primary-accent-color);
+    border-radius: 4px;
+
     font-family: inherit;
     font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
-        display: flex;
         align-items: center;
         letter-spacing: 0.04em;
         color: var(--primary-white-color);
@@ -142,6 +170,15 @@ color: var(--secondary-accent-color);
 }
 
 /* --------------ABOUT-------------- */
+
+.about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.about-item:not(:last-child) {
+    margin-bottom: 24px;
+}
 
 .about-item-title {
     font-weight: 500;
@@ -160,19 +197,34 @@ color: var(--secondary-accent-color);
 
 /* --------------FUNCTIONS-------------- */
 
+.functions {
+    padding-bottom: 120px;
+}
+
 .functions-title {
+    margin-bottom: 72px;
     font-size: 36px;
         line-height: 1.11;
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-text-color);
+}
+
+.functions-item:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 
 /* --------------TEAM-------------- */
 
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .team-title {
+    margin-bottom: 72px;
     font-size: 36px;
         line-height: 1.11;
         text-align: center;
@@ -181,27 +233,56 @@ color: var(--secondary-accent-color);
         color: var(--primary-text-color);
 }
 
+.team-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
 .team-img-name {
+    margin-bottom: 8px;
+}
+
+.team-img-name {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 32px;
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
-        text-align: center;
         letter-spacing: 0.02em;
         color: var(--primary-text-color);
 }
 
 .team-img-text {
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-bottom: 32px;
     font-size: 16px;
         line-height: 1.5;
-        text-align: center;
         letter-spacing: 0.02em;
         color: var(--secondary-text-color);
 }
 
 /** -------------------------PORTFOLIO------------------------- */
+
+/* --------------HEADER--------------- */
+
+.header-portfolio {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /* --------------PRODUCTS-------------- */
 
+.products {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .filters-btn {
+    display: block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1.6 solid var(--primary-accent-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -220,8 +301,25 @@ color: var(--secondary-accent-color);
     color: var(--primary-white-color);
 }
 
+.filters-list {
+margin-bottom: 72px;
+}
+
+.filters-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.products-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+
 .products-item-title {
+    padding-top: 32px;
+    padding-right: 54px;
+    padding-left: 16px;
     font-weight: 500;
+    margin-bottom: 8px;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
@@ -229,6 +327,8 @@ color: var(--secondary-accent-color);
 }
 
 .products-item-text {
+    padding-bottom: 32px;
+    padding-left: 16px;
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -238,6 +338,8 @@ color: var(--secondary-accent-color);
 /* --------------FOOTER-------------- */
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--primary-text-color);
 }
 
@@ -258,6 +360,7 @@ color: var(--secondary-accent-color);
 }
 
 .footer-text {
+    max-width: 264px;
 font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
