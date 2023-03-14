@@ -39,9 +39,10 @@ ul {
     margin: 0;
 }
 
-.header {
+header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 address {
@@ -58,7 +59,7 @@ img {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-right: auto;
@@ -137,7 +138,7 @@ color: var(--secondary-accent-color);
 .hero {
     background-color: var(--primary-text-color);
     padding-top: 188px;
-    padding-bottom: 292px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -189,12 +190,12 @@ color: var(--secondary-accent-color);
 .about-list {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
 }
 
-/* .about-item {
-      width: 264px;
-} */
+.about-item {
+    width: 264px;
+    flex-basis: calc((100% - 72px) / 4);
+}
 
 .about-item-title {
     margin-bottom: 8px;
@@ -233,11 +234,6 @@ color: var(--secondary-accent-color);
     gap: 24px;
 }
 
-.functions-item:not(:last-child) {
-    margin-bottom: 24px;
-}
-
-
 /* --------------TEAM-------------- */
 
 .team {
@@ -260,14 +256,18 @@ display: flex;
 gap: 24px;
 }
 
+.team-list-description {
+    text-align: center;
+}
+
 .team-img-name {
     margin-bottom: 8px;
 }
 
 .team-img-name {
-    padding-left: 65px;
+    /* padding-left: 65px;
     padding-right: 65px;
-    padding-top: 32px;
+    padding-top: 32px; */
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -276,9 +276,9 @@ gap: 24px;
 }
 
 .team-img-text {
-    padding-left: 65px;
+    /* padding-left: 65px;
     padding-right: 65px;
-    padding-bottom: 32px;
+    padding-bottom: 32px; */
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -339,20 +339,17 @@ gap: 24px;
     padding: 0;
 }
 
+.products-list-description {
+    padding: 32px 16px;
+}
+
 .products-list-item {
     max-width: 360px;
     flex-basis: calc((100% - 48px) / 3);
     border-bottom: 1px solid #E7E9FC;
 }
 
-/* .products-list-item:not(:last-child) {
-    margin-right: 24px;
-} */
-
 .products-item-title {
-    padding-top: 32px;
-    padding-right: 54px;
-    padding-left: 16px;
     font-weight: 500;
     margin-bottom: 8px;
         font-size: 20px;
@@ -362,9 +359,6 @@ gap: 24px;
 }
 
 .products-item-text {
-    padding-bottom: 32px;
-    padding-left: 16px;
-    padding-right: 54px;
     font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
